@@ -23,11 +23,33 @@ body{
   color:wheat;
 }
 #w{
-  width:115vh;
+  max-width:115vh;
+  width:auto;
   height:85vh;
   margin-top:-10vh;
   background:black;
   color:wheat;
+}
+@media (max-width: 600px) {
+    #w{
+        max-width: 100%;      /* Image scales down to fit the container */
+        height: auto;         /* Maintain aspect ratio */
+    }
+    #i{
+ max-width: 100%;    
+ margin-top:0vh; 
+ margin-left:0; /* Image scales down to fit the container */
+        height: auto;  
+    }
+    #uday{
+  margin-left:30px;
+  margin-bottom:0px;
+}
+#udayi{
+    margin:0;}
+  #optionsList{
+      margin-bottom: 0;
+  }
 }
 footer,nav,section,p,.navbar-brand,.card-footer,.badge{
   background:black;
